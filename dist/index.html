@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Weather App</title>
+</head>
+<body>
+    <main>
+        <p class="errorMsg"></p>
+        <form action="">
+            <input type="text" name="location" id="location" class="searchLocation" placeholder="Enter a city">
+            <button type="button" class="searchBtn"><span class="material-symbols-outlined">search</span></button>
+        </form>
+    <div class="weatherContainer">
+        <div class="columnContainer">
+        <div class="mainContainer">
+        <div class="tempContainer">
+        <h1 class="currentTemp"></h1><h1 class="tempUnit">F°</h1>
+        </div>
+        <img src="#" alt="Weather Icon" class="weatherIcon">
+        <h2 class="weatherDescription"></h2>
+        <div class="feelsLikeContainer">
+        <h2 class="feelsLike"><h2 class="tempUnit">F°</h2></h2>
+        </div>
+        <div class="hiLoContainer">
+            <p class="hiTemp"><p class="tempUnit">F°</p></p>
+            <p class="loTemp"><p class="tempUnit">F°</p></p>
+        </div>
+    </div>
+    <div class="sideContainer">
+        <h1 class="locationName"></h1>
+    </div>
+    </div>
+    <button class="unitChangeBtn">Change to C°</button>
+        
+        
+    </div>
+    </main>
+</body>
+</html>

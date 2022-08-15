@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  display: flex;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  background-image: url(img/backgroundIMG.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.weatherContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 350px;
+  max-width: 350px;
+  min-height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: white;
+  background: rgba(0, 0, 0, 0.295);
+}
+
+.columnContainer,
+.tempContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.tempContainer > .tempUnit {
+  font-size: 5em;
+}
+
+.locationName {
+  writing-mode: vertical-lr;
+  font-size: 5em;
+}
+
+.currentTemp {
+  font-size: 5em;
+}
+
+.hiLoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 220px;
+  margin-top: 10px;
+}
+
+.container,
+.feelsLikeContainer {
+  display: flex;
+  width: 220px;
+}
+
+.sideContainer {
+  margin: 0 0 0 0.5rem;
+}
+
+.weatherIcon {
+  margin: 0;
+  width: 50%;
+  height: 40%;
+  margin-bottom: 10px;
+}
+
+.weatherDescription {
+  margin-bottom: 70px;
+  font-size: 1.5em;
+}
+
+.hiLoContainer,
+.hiLoContainer > p {
+  font-size: 1.25em;
+}
+
+.hiLoContainer {
+  margin-bottom: 30px;
+}
+
+.feelsLikeContainer,
+.feelsLikeContainer > h2 {
+  font-size: 1em;
+}
+
+.feelsLikeContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.searchBtn {
+  display: inline-flex;
+  justify-content: end;
+  align-items: end;
+  vertical-align: bottom;
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+input[type="text"] {
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  outline: 0;
+  border: none;
+  border-bottom: 1px white solid;
+  border-width: 0 0 2px;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 200px;
+  padding: 5px;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.errorMsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 20px;
+  width: 250px;
+  text-align: center;
+}
